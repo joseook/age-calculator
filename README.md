@@ -1,46 +1,44 @@
-Aqui está o README.md que você pode incluir em seu projeto:
-
 # Age Calculator
 
-O Age Calculator é uma aplicação simples que calcula a idade com base na data de nascimento fornecida. A aplicação fornece informações sobre a idade em anos, meses e dias.
+The Age Calculator is a simple application that calculates age based on the provided date of birth. The application provides information about age in years, months, and days.
 
-## Como Usar
+## How to Use
 
-1. Clone este repositório ou faça o download do código-fonte.
+1. Clone this repository or download the source code.
 
    ```bash
-   git clone https://github.com/seu-usuario/age-calculator.git
+   git clone https://github.com/your-username/age-calculator.git
    ```
 
-2. Abra o arquivo `index.html` em um navegador da web.
+2. Open the `index.html` file in a web browser.
 
-3. Preencha os campos de data, mês e ano com a data de nascimento desejada.
+3. Fill in the date, month, and year fields with the desired date of birth.
 
-4. Clique no botão "Submit" para calcular a idade.
+4. Click the "Submit" button to calculate the age.
 
-## Verificações de Entrada
+## Input Checks
 
-A aplicação realiza verificações nos campos de entrada para garantir que os dados inseridos sejam válidos:
+The application performs checks on the input fields to ensure that the entered data is valid:
 
-- **Dia:**
-  - Deve ser um número entre 1 e 31.
+- **Day:**
+  - Should be a number between 1 and 31.
 
-- **Mês:**
-  - Deve ser um número entre 1 e 12.
+- **Month:**
+  - Should be a number between 1 and 12.
 
-- **Ano:**
-  - Deve ser um número positivo com pelo menos 4 dígitos.
+- **Year:**
+  - Should be a positive number with at least 4 digits.
 
-Se os dados inseridos não atenderem a esses critérios, um alerta será exibido e os campos de entrada relevantes serão destacados em vermelho.
+If the entered data does not meet these criteria, an alert will be displayed, and the relevant input fields will be highlighted in red.
 
-## Estilo
+## Style
 
-O projeto utiliza o Tailwind CSS para estilização e inclui ícones Remix para uma aparência moderna e agradável.
+The project uses Tailwind CSS for styling and includes Remix icons for a modern and pleasant appearance.
 
-## Contribuição
+## Contribution
 
-Sinta-se à vontade para contribuir com melhorias, correções de bugs ou novos recursos. Abra uma [issue](https://github.com/seu-usuario/age-calculator/issues) ou envie uma [pull request](https://github.com/seu-usuario/age-calculator/pulls).
+Feel free to contribute improvements, bug fixes, or new features. Open an [issue](https://github.com/your-username/age-calculator/issues) or submit a [pull request](https://github.com/your-username/age-calculator/pulls).
 
-## Licença
+## License
 
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
