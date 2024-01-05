@@ -16,7 +16,11 @@ module.exports = {
       lg: '1024px',
       xl: '1280px',
     },
-    extend:{}
+    extend:{
+      backgroundImage:{
+        'calculator_family': 'url(./components/image/bg-calculator.jpg)'
+      },
+    }
   },
   plugins: [],
 }

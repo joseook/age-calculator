@@ -1,13 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Age Calculator</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
 
-  
-</head>
-<body>
-  
-</body>
+    <!-- LOGO -->
+    <link
+      rel="shortcut icon"
+      href="./components/image/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- TAILWIND ONLY -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- REMIX ICON  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    class="box-border m-0 p-0 bg-[#232323] flex items-center justify-center min-h-screen w-screen "
+  >
+    <div
+      class="container mx-auto bg-gradient-to-br from-[#222] via-[#333] to-[#444] shadow-2xl rounded-md flex-1 xl:flex-none min-h-[520px] h-auto w-9/6 xl:w-6/12 flex justify-center items-center relative"
+    >
+      <div
+        class="box backdrop-blur-md shadow-2xl bg-white/30 e min-h-[300px] w-[520px] rounded-md p-8 relative "
+      >
+        <form action="#">
+          <h1 class="text-center text-dark font-bold text-3xl mt-2">
+            Age Calculator
+            <i class="ri-calendar-2-line"></i>
+          </h1>
+
+          <div class="input-box mt-4">
+            <div class="flex flex-col gap-2">
+              <label for="date" class="font-semibold text-lg">Date: </label>
+              <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '');" class="rounded-md bg-transparent border-2 max-w-32 p-1 focus:ring focus:ring-yellow-500 text-[#333] dark:text-white" id="date" placeholder="Your Day" required>
+            </div>
+            <div class="flex flex-col gap-2 mt-2">
+              <label for="month" class="font-semibold text-lg">Month: </label>
+              <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '');" class="rounded-md bg-transparent border-2 max-w-32 p-1 focus:ring focus:ring-yellow-500 text-[#333] dark:text-white" id="month" placeholder="Your Month" required>
+            </div>
+            <div class="flex flex-col gap-2 mt-2">
+              <label for="year" class="font-semibold text-lg">Year: </label>
+              <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '');" class="rounded-md bg-transparent border-2 max-w-32 p-1 focus:ring focus:ring-yellow-500 text-[#333] dark:text-white" id="year" placeholder="Your Year" required>
+            </div>
+          </div>
+        </form>
+        <div class="flex justify-center items-center mt-4">
+          <input type="submit" name="button" value="submit" onclick="age()" class="w-1/2 h-10 bg-[#333] rounded-md hover:bg-red-400 focus:ring focus:ring-slate-50 uppercase font-bold text-white" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Containers para os resultados -->
+    <div id="years-container" class="result-container mt-8 absolute left-96 bottom-5"></div>
+    <div id="months-container" class="result-container absolute bottom-5"></div>
+    <div id="days-container" class="result-container absolute bottom-5 right-96"></div>
+
+    <script src="components/js/app.js"></script>
+  </body>
 </html>
