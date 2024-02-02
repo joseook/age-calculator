@@ -7,7 +7,7 @@ The Age Calculator is a simple application that calculates age based on the prov
 1. Clone this repository or download the source code.
 
    ```bash
-   git clone https://github.com/your-username/age-calculator.git
+   git clone https://github.com/joseook/age-calculator.git
    ```
 
 2. Open the `index.html` file in a web browser.
